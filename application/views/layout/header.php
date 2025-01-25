@@ -11,16 +11,16 @@
                             <a class="nav-link active" href="<?php echo WEBSITE_URL;?>join-umma">Join the UMMA</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="<?php echo WEBSITE_URL;?>programs">Programs</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="<?php echo WEBSITE_URL;?>resources">Resources</a>
+                            <!--<a class="nav-link" href="<?php echo WEBSITE_URL;?>programs">Programs</a>-->
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link" href="<?php echo WEBSITE_URL;?>about">About</a>
                         </li>
-                        <li class="nav-item me-4 umma-button">
-                            <a class="nav-link" href="javascript:void(0);">Support</a>
+                        <!--<li class="nav-item me-4">-->
+                        <!--    <a class="nav-link" href="<?php echo WEBSITE_URL;?>resources">Resources</a>-->
+                        <!--</li>-->
+                        <li class="nav-item umma-button">
+                            <a class="nav-link" target="_blank" href="https://www.zeffy.com/en-US/donation-form/e6c041d0-59e3-44c1-9abb-3867bda70600">Support</a>
                         </li>
                     </ul>
                 </div>
@@ -38,13 +38,13 @@
                     <a class="nav-link active" href="<?php echo WEBSITE_URL;?>join-umma">Join the UMMA</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" href="<?php echo WEBSITE_URL;?>programs">Programs</a>
-                </li>
-                <li class="nav-item me-4">
-                    <a class="nav-link" href="<?php echo WEBSITE_URL;?>resources">Resources</a>
+                    <!--<a class="nav-link" href="<?php echo WEBSITE_URL;?>programs">Programs</a>-->
                 </li>
                 <li class="nav-item me-4">
                     <a class="nav-link" href="<?php echo WEBSITE_URL;?>about">About</a>
+                </li>
+                <li class="nav-item me-4">
+                    <!--<a class="nav-link" href="<?php echo WEBSITE_URL;?>resources">Resources</a>-->
                 </li>
                 <li class="nav-item me-4 umma-button">
                     <a class="nav-link" href="javascript:void(0);">Support</a>

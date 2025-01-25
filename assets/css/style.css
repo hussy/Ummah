@@ -134,6 +134,9 @@ p {
     font-style: normal;
 }
 /** NAVBAR **/
+.navbar-brand {
+    margin-left: 27px;
+}
 .umma-header {
     box-shadow: 0px 4px 8px 3px #00000026;
     z-index: 1000;
@@ -169,6 +172,8 @@ p {
     transition: 0.2s ease-in-out;
     border-radius: 4px;
     border: 1px solid #414514;
+    margin-right: 36px;
+    margin-left: 49px;
 }
 .ummah-navbar .umma-button a {
     color: #fff !important;
@@ -231,7 +236,7 @@ p {
     text-align: center;
     position: absolute;
     width: 100%;
-    top: 40%;
+    top: 33%;
     display: none;
 }
 .ummah-banner-section .banner-content .banner-heading {
@@ -279,21 +284,23 @@ p {
     bottom: -26px;
 }
 .ummah-banner-section .banner-marquee .marquee-box {
-    max-width: 1500px;
+    width: 1200px;
     height: 69px;
-    border-radius: 6px;
+    border-radius: 8px;
     margin: 0px auto;
     background-color: #D0CFB0;
     box-shadow: 0px 2.32px 46px 0px #0000002B;
-    padding: 4px 8px;
+
 }
 .ummah-banner-section .banner-marquee .marquee-box .marquee-time {
-    width: 173px;
-    height: 60px;
-    padding: 17px 26px 17px 18px;
-    border-radius: 7px;
+    height: 69px;
+    padding: 20px 26px 17px 26px;
     background: #5C5F41;
     box-shadow: 0px 2.32px 46px 0px #0000000F;
+    border-top-left-radius: 8px;
+    text-align:center;
+    border-bottom-left-radius: 8px;
+    /* width: 277px; */
 }
 .ummah-banner-section .banner-marquee .marquee-box .marquee-time img {
     margin-top: -4px;
@@ -301,14 +308,31 @@ p {
 .ummah-banner-section .banner-marquee .marquee-box .marquee-time span {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 30.24px;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin-left: 10px;
 }
+.ummah-banner-section .banner-marquee .marquee-box .prayer-times {
+    margin: 0px;
+    list-style: none;
+    padding: 20px 0px 17px 0px;
+}
+.ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:first-child { 
+    margin-left: 73px;
+}
+.ummah-banner-section .banner-marquee .marquee-box .prayer-times .time { 
+    color: #5C5F41;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 127px;
+}
 .ummah-banner-section .banner-marquee .marquee-box .marquee-slide {
-    padding: 17px 26px 17px 18px;
+    padding: 20px 0px 17px 0px;
 }
 .ummah-banner-section .banner-marquee .marquee-box .marquee-slide .time { 
     color: #5C5F41;
@@ -348,10 +372,6 @@ p {
         font-size: 15px;
     }   
 }
-.ummah-banner-section .banner-marquee .marquee-box .marquee-time {
-    width: 167px;
-}
-
 @media (max-width: 576px) {
     .ummah-banner-section .banner-marquee .marquee-box .marquee-slide {
         text-align: center;
@@ -385,20 +405,218 @@ p {
 }
 @media (max-width: 400px) {
     .ummah-banner-section .banner-marquee .marquee-box .marquee-time {
-        width: 152px;
         padding: 17px 14px 17px 11px;
     }
 }
-@media (max-width: 380px) {
-    .ummah-banner-section .banner-marquee .marquee-box .marquee-time {
-        width: 144px;
+@media (max-width: 1332px) {
+    .ummah-banner-section .banner-marquee .marquee-box {
+        max-width: 1100px;
     }
+    .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:first-child {
+        margin-left: 76px;
+    }
+    .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time {
+      margin-right: 103px;
+      font-size: 16px;
+    }
+    .ummah-banner-section .banner-marquee .marquee-box .prayer-times {
+        padding:23px 0px 17px 0px;
+    }
+}
+@media (max-width: 1111px) {
+  .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time {
+    margin-right: 78px;
+  }
+  .ummah-banner-section .banner-marquee .marquee-box .prayer-times {
+      display:flex;
+  }
+}
+@media (max-width: 992px) {
+    .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:last-child {
+        display:none;
+    }
+}
+@media (max-width: 900px) {
+  .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time {
+    margin-right: 84px;
+  }
+}
+@media (max-width: 777px) {
+  .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:first-child {
+    margin-left: 47px;
+  }
+   .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time {
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+   .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time.second {
+        display:none;
+  }
+   .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:first-child {
+        margin-left: 77px;
+  }
+}
+@media (max-width: 550px) {
+   .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:first-child {
+        margin-left: 77px;
+  }
+  .ummah-banner-section .banner-marquee .marquee-box .prayer-times {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin: 0px;
+  }
 }
 /** UMMAH FEATURED SECTION */
 .ummah-featured-section {
     padding: 70px 100px 70px 100px;
     background: linear-gradient(182.64deg, #D0CFB0 3%, rgba(255, 255, 255, 0.96) 84%, #fff 3%);
 }
+.ummah-featured-section .featured-container {
+    width: 1200px;
+    margin: 0px auto;
+}
+.ummah-featured-section .featured-container .left-featured {
+    margin-top: 23px;
+    margin-left: 42px;
+}
+.ummah-featured-section .featured-container .left-featured .freatued-time {
+    background: #787749;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 29px;
+    border-bottom-right-radius: 29px;
+    border-bottom-left-radius: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30.24px;
+    color: #FCFBFB;
+    display: inline-block;
+    padding: 3px 49px 3px 10px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-heading {
+    font-family: 'Aurora', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 70.64px;
+    color: #414514;
+    margin-top: 16px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-sub-heading {
+    font-family: 'Aurora', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30.64px;
+    color: #414514;
+    margin-top: 5px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-punch-line {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.24px;
+    letter-spacing: 1px;
+    color: #414514;
+    margin-top: 18px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-text {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 8px;
+    color: #414514;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.8px;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-points {
+    margin-top: 45px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-points .points {
+    border: 1px solid #D0CFB0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-points .points .head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25.68px;
+    text-align: left;
+    color: #5C5F41;
+}
+.ummah-featured-section .featured-container .left-featured .featured-points .points .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25.68px;
+    text-align: left;
+    color: #5C5F41;
+}
+.ummah-featured-section .featured-container .left-featured .featured-points .points .text.last {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25.68px;
+    text-align: justify;
+    color: #5C5F41;
+}
+.ummah-featured-section .featured-container .left-featured .featured-button {
+    margin-top: 30px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-button .btn-program-featured {
+    width: 201px;
+    height: 66px;
+    border-radius: 8px;
+    background: rgba(92, 95, 65, 1);
+    border: 1px solid rgba(92, 95, 65, 1);
+    transition: 0.2s ease-in-out;
+    color: #FCFBFB;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.ummah-featured-section .featured-container .left-featured .featured-button .btn-program-featured:hover {
+    transform: scale(0.95);
+    background: #FCFBFB;
+    color: rgba(92, 95, 65, 1);
+}
+.ummah-featured-section .featured-container .right-featured-home {
+    text-align: right;
+    margin-right: 68px;
+    margin-top: 84px;
+}
+.ummah-featured-section .featured-container .right-featured-home .image {
+    position: relative;
+}
+.ummah-featured-section .featured-container .right-featured-home .image img {
+    border-radius: 8px;
+    position: relative;
+    z-index: 1000;
+}
+.ummah-featured-section .featured-container .right-featured-home .image .background-image {
+    width: 336px;
+    height: 329px;
+    border-radius: 8px;
+    background: #D1BA8E;
+    transform-origin: center;
+    margin-left: 45px;
+    box-shadow: -12px 16px 8.9px 0px #0000000D;
+    transform: rotate(-10deg);
+    top: 0px;
+    position: absolute;
+    top: 24px;
+    right: 61px;
+    z-index: 0;
+}
+
+
+
 .ummah-featured-section .left-section {
     padding: 56px 128px;
     text-align: left;
@@ -412,7 +630,7 @@ p {
 }
 .ummah-featured-section .left-section .featured-heading {
     font-family: 'Aurora', sans-serif;
-    font-size: 56px;
+    font-size: 43px;
     font-weight: 400;
     line-height: 80.64px;
     color: #4D4F36;
@@ -446,6 +664,33 @@ p {
     line-height: 18.8px;
     letter-spacing: 1px;
 }
+
+.ummah-featured-section .left-section .bottom-section .featured-bottom-text, 
+.ummah-featured-section .right-section .bottom-section .featured-bottom-text {
+    margin-top: 22px;
+}
+.ummah-featured-section .left-section .bottom-section .featured-bottom-text ul,
+.ummah-featured-section .right-section .bottom-section .featured-bottom-text ul {
+    list-style: disc;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 16px;
+}
+.ummah-featured-section .right-section .bottom-section .featured-bottom-text ul {
+    list-style: none;
+}
+.ummah-featured-section .left-section .bottom-section .featured-bottom-text ul li,
+.ummah-featured-section .right-section .bottom-section .featured-bottom-text ul li {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 8px;
+    color: #4D4F36;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18.8px;
+    letter-spacing: 1px;
+}
+
+
 .ummah-featured-section .left-section .bottom-section .featured-button {
     margin-top: 30px;
 }
@@ -471,7 +716,7 @@ p {
 .ummah-featured-section .right-section {
     padding: 77px;
     margin-left: 100px;
-    margin-top: 10px;
+    margin-top: 76px;
 }
 .ummah-featured-section .right-section .image-frame {
     width: 367px;
@@ -527,7 +772,7 @@ p {
         margin-left: 0px;
         width: 464px;
         margin-left: 70px;
-        margin-top: 16px;
+        margin-top: 115px;
     }
 }
 @media (max-width: 1200px) {
@@ -1103,20 +1348,20 @@ p {
     color: #414514;
 }
 .ummah-programs .programs-section {
-    margin-top: 40px;
+    margin-top: 67px;
     background: url('../images/program-layers.png') no-repeat center center / cover;
     padding-bottom: 5px;
     background-position: center -47%;
 }
 .ummah-programs .programs-section .program-schedule {
     font-family: "DM Sans", sans-serif;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 38px;
     color: rgba(65, 68, 44, 1);
 }
 .ummah-programs .programs-section .box {
-    width: 284px;
+    width: 300px;
 }
 .ummah-programs .programs-section .box-wrapper {
     background: #FCFBFB;
@@ -1125,10 +1370,12 @@ p {
     box-shadow: 0px 5px 8px 0px #adb5bd;
     border-radius: 12px;
     cursor: pointer;
-    height: 490px;
+    height: 550px;
 }
 .ummah-programs .programs-section .box .image img {
     width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 .ummah-programs .programs-section .box .title {
     font-family: 'Poppins', sans-serif;
@@ -1137,6 +1384,8 @@ p {
     line-height: 30.24px;
     padding-top: 13px;
     color: #4D4F36;
+    padding: 6px;
+    margin-top: 10px;
 }
 .ummah-programs .programs-section .box .name-age {
     font-family: 'Poppins', sans-serif;
@@ -1145,7 +1394,7 @@ p {
     line-height: 22.68px;
     text-align: center;
     color: #4D4F36;
-    padding-top: 2px;
+    padding: 9px;
 }
 .ummah-programs .programs-section .box .program-button {
     margin-top: 14px;
@@ -1181,22 +1430,21 @@ p {
 }
 .ummah-programs .programs-section .slick-arrow {
     position: absolute;
-    bottom: -130px;
+    top: -61px;
     cursor: pointer;
     margin: 0px auto;
     text-align: center;
+    right: 0px;
+}
+.ummah-programs .programs-section .slick-prev {
+    right: 54px;
 }
 .ummah-programs .programs-section .slick-arrow img {
     transition: 0.2s ease-in-out;
     transition-duration: 0.2s;
     transition-property: transform, -webkit-transform;
 }
-.ummah-programs .programs-section .slick-next {
-    left: 50%;
-}
-.ummah-programs .programs-section .slick-prev {
-    left: 45%;
-}
+
 .ummah-programs .programs-section .slick-arrow img:hover {
     transform: scale(0.8);
 }
@@ -1208,14 +1456,11 @@ p {
     .ummah-programs .programs-section .program-schedule {
         font-size: 18px;
     }
-    .ummah-programs .programs-section .slick-next {
-        left: 52%;
-    }
     .ummah-programs .programs-section .box-wrapper {
-        height: 420px;
+        height: 580px;
     }
     .ummah-programs .programs-section .box-wrapper .image img {
-        height: 280px;
+        height: 369px;
     }
 }
 @media (max-width: 850px) {
@@ -1225,22 +1470,10 @@ p {
     .ummah-programs .programs-section .program-schedule {
         font-size: 18px;
     }
-    .ummah-programs .programs-section .slick-next {
-        left: 52%;
-    }
-    .ummah-programs .programs-section .slick-prev {
-        left: 42%;
-    }
 }
 @media (max-width: 635px) {
     .ummah-programs .programs-section .program-schedule {
         font-size: 18px;
-    }
-    .ummah-programs .programs-section .slick-next {
-        left: 51%;
-    }
-    .ummah-programs .programs-section .slick-prev {
-        left: 36%;
     }
     .ummah-programs .programs-section .programs-manage {
         padding: 0px 20px;
@@ -1249,7 +1482,7 @@ p {
         height: 223px;
     }
     .ummah-programs .programs-section .box-wrapper {
-        height: 367px;
+        height: 469px;
     }
     .ummah-programs .programs-section .program-schedule {
         font-size: 16px;
@@ -1266,7 +1499,7 @@ p {
         height: 270px;
     }
     .ummah-programs .programs-section .box-wrapper {
-        height: 406px;
+        height: 469px;
     }
     .ummah-programs .programs-section .programs-manage .box {
         width: 300px;
@@ -1277,12 +1510,13 @@ p {
 }
 /** UMMAH MISSION **/
 .ummah-mission {
+    margin-top: 100px;
     padding: 160px 0px 100px 0px;
     text-align: center;
     background: linear-gradient(180deg, #fff 0%, #FCFBFB 10%, #CCCBAC 100%);
 }
 .ummah-mission-second {
-    padding: 160px 0px 240px 0px;
+    padding:0px 0px 135px 0px;
 }
 .ummah-mission .title {
     font-family: 'Poppins', sans-serif;
@@ -1309,7 +1543,7 @@ p {
         padding: 100px;
     }
     .ummah-mission-second {
-        padding: 100px 100px 200px;
+        padding: 0px 100px 200px;
     }
 }
 @media (max-width: 991px) {
@@ -1317,7 +1551,7 @@ p {
         padding: 100px 50px;
     }
     .ummah-mission-second {
-        padding: 100px 50px 68px;
+        padding: 0px 50px 122px;
     }
 }
 @media (max-width: 600px) {
@@ -1325,7 +1559,7 @@ p {
         padding: 100px 30px;
     }
     .ummah-mission-second {
-        padding: 100px 30px;
+        padding: 0px 15px 120px;
     }
 }
 /** UMMAH SUBSCRIPTION **/
@@ -1548,7 +1782,7 @@ p {
 /** UMMAH FOOTER **/
 .ummah-footer {
     background-color: #787749;
-    padding: 70px 0px;
+    padding: 70px 0px 18px;
 }
 .ummah-footer-second {
     background-color: #5C5F41;
@@ -1822,8 +2056,23 @@ p {
         padding: 60px 20px;
     }
     .about-page .page-banner {
-        padding: 70px 40px;
-        font-size: 35px;
+        padding: 29px 40px;
+        font-size: 31px;
+    }
+    .page-content {
+        margin-top: 34px;
+        text-align: center;
+        padding: 0px 5px !important;
+    }
+    .page-content .stats {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    } 
+    .page-content .stats .text-muted {
+        font-size:14px;
+    }
+    .page-content .paragraph {
+        margin-top: -61px;
     }
 }
 
@@ -1846,7 +2095,7 @@ p {
         font-size: 17px;
     }
     .page-content .meet-scholar .scholar-info .text-scholar {
-        margin-top: 40px;
+        margin-top: -9px;
     }
     .scholar-section-info {
         background: #FCFBFB;
@@ -2601,7 +2850,7 @@ p {
     margin-top: 11px;
 }
 .join-page .page-content .box-left {
-    margin-top: 38px;
+    margin-top: 96px;
     padding: 0px 0px 0px 37px;
  }
 .join-page .page-content .box-left .whatsapp {
@@ -2610,13 +2859,12 @@ p {
     padding: 6px 9px;
 }
 .join-page .page-content .box-left .head { 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Aurora', sans-serif;
     font-size: 32px;
-    font-weight: 600;
-    line-height: 41.76px;
+    font-weight: 500;
+    line-height: 55.76px;
     text-align: left;
     color: #333333;
-    margin-left: 15px;
 }
 .join-page .page-content .box-left .text { 
     font-family: 'Poppins', sans-serif;
@@ -2625,14 +2873,13 @@ p {
     line-height: 30.24px;
     text-align: left;
     color: #333333;
-    margin-left: 15px;
 }
 .join-page .page-content .box-left .bottom-text { 
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 30.24px;
-    margin-top: 56px;
+    margin-top: 10px;
     text-align: left;
     padding: 4px 13px;
     color: #333333;
@@ -2656,6 +2903,7 @@ p {
     line-height: 18px;
     text-align: left;
     padding: 5px 19px;
+    cursor:pointer;
 }
 .join-page .page-content .box-left .join-buttons button img {
     margin-right: 15px;
@@ -2859,6 +3107,66 @@ p {
 .join-page .support-community .community-img {
     display: none;
 }
+.join-com {
+    text-align: left;
+    margin-left: 20px;
+    position: relative;
+    margin-top: -48px;
+}
+.join-com .image {
+    text-align: left;
+    margin-left: 20px;
+}
+.join-com img {    
+    height: 528px;
+}
+.join-buttons {
+    position: absolute;
+    top: 92px;
+    right: 156px;
+    top: 134px;
+    right: 70px;
+}
+.join-buttons ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.join-buttons ul li {
+    background: #D0CFB0;
+    box-shadow: 1px 2px 9.8px 0px #00000073;
+    width: 360px;
+    height: 70px;
+    border-radius: 12px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: #414514;
+    margin-bottom: 21px;
+    padding-left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor:pointer;
+}
+.join-buttons ul li .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    display: block;
+}
+.join-buttons ul li .nav-arrow {
+    float: right;
+    margin-right: 19px;
+}
+.join-buttons ul li img {
+    width: 30px;
+    height: 30px;
+}
+
 @media (max-width: 1350px) {
     .join-page {
       padding: 60px 20px;
@@ -2871,8 +3179,8 @@ p {
 }
 @media (max-width: 991px) {
     .join-page .page-banner {
-      padding: 70px 40px;
-      font-size: 35px;
+          padding: 32px 40px;
+        font-size: 23px;
     }
     .join-page .page-content .box-left {
         padding: 0px;
@@ -2886,7 +3194,7 @@ p {
         visibility: hidden;
     }
     .join-page .page-content .banner-section {
-        margin-top: 40px;
+        margin-top: -8px;
     }
     .join-page .support-community .img {
         display: none;
@@ -2917,26 +3225,38 @@ p {
         margin-bottom: 38px;
         display: block;
     }
+    .join-page .support-community {
+        margin-bottom: 20px;
+    }
 
 }
 @media (max-width: 700px) {
     .join-page .support-community .community-info {
-        margin-top: 75px;
+        margin-top: 109px;
     }
 }
-@media (max-width: 600px) {
-    .join-page .support-community .community-info {
-        margin-top: 100px;
-    }
+.stay-connected-small {
+    display:none;
 }
-@media (max-width: 500px) {
-    .join-page .support-community .community-info {
-        margin-top: 140px;
+@media (max-width: 700px) {
+    .join-page .page-content .image img {
+        width: 300px;
+        height:auto !important;
     }
 }
 @media (max-width: 500px) {
     .join-page .page-content .image img {
         width: 100%;
+    }
+}
+@media (max-width: 1380px) {
+    .page-content {
+        padding: 0px 10px;
+    }
+}
+@media (max-width: 700px) {
+    .join-com .image {
+        text-align: center;
     }
     .join-page .page-content .box .join-buttons-small button {
         width: 124px;
@@ -2949,10 +3269,46 @@ p {
         width: 30px;
     }
     .join-page .support-community .community-info {
-        margin-top: 179px;
+        margin-top: 109px;
     }
     .join-page .support-community .community-info .featured {
         font-size: 25px;
+    }
+    .join-buttons {
+        position:unset !important;
+                margin-top: 48px;
+    }
+    .join-buttons ul li {
+        width:100%;
+    }
+    .stay-connected-small {
+        display:block;
+    }
+    .stay-connected-small .head {
+        font-family: 'Aurora', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 55.76px;
+        text-align: center;
+        color: #333333;
+    }
+    .stay-connected-small .text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30.24px;
+        text-align: center;
+        color: #333333;
+    }
+    .stay-connected-small .bottom-text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30.24px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 4px 13px;
+        color: #333333;
     }
 }
 @media (max-width: 400px) {
@@ -3255,3 +3611,278 @@ p {
         padding: 8px 10px;
     }
 }
+.featured-up-programs {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.featured-up-programs::before {
+    content: "";
+    position: absolute;
+    top: 186px;
+    left: 0;
+    right: 0;
+    height: 494px;
+    background: url('../images/program-layers.png') no-repeat center center / cover;
+    z-index: -1;
+}
+.featured-up-programs .program-container {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+.featured-up-programs .program-container .featured-programs {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: 53.76px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #414514;
+}
+.featured-up-programs .program-container .featured-blocks {
+    margin-top: 50px;
+    text-align: center;
+}
+.featured-up-programs .program-container .featured-blocks .blocks {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-time {
+    font-family: "DM Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: center;
+    color: #2A2F16;
+    background: #D0CFB0;
+    padding: 4px 26px;
+    border-radius: 34px;
+    box-shadow: 0px 1.32px 3px 0px #0000002B;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card {
+    box-shadow: 0px 0px 10px 1px #00000026;
+    background-color: #FCFBFB;
+    border: 1px solid #D1BA8E;
+    border-radius: 8px;
+    padding: 4px;
+    margin-top: 14px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-image {
+    width: 291px;
+    height: 357px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-image img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 31.88px;
+    text-align: center;
+    color: #4D4F36;
+    margin-top: 13px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-sheikh {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.88px;
+    text-align: center;
+    color: #4D4F36;
+    margin-top: 8px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-button {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-button .btn-program-featured {
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgba(92, 95, 65, 1);
+    border: 1px solid rgba(92, 95, 65, 1);
+    transition: 0.2s ease-in-out;
+    color: #FCFBFB;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.featured-up-programs .program-container .featured-blocks .blocks .event-card .event-button .btn-program-featured:hover {
+    transform: scale(0.95);
+    background: #fff;
+    color: rgba(92, 95, 65, 1);
+}
+
+@media (max-width: 550px) {
+   .ummah-banner-section .banner-marquee .marquee-box .prayer-times .time:first-child {
+        margin-left: 13px;
+  }
+  .ummah-banner-section .banner-marquee .marquee-box .prayer-times {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin: 0px;
+      padding:23px 0px 0px 0px;
+  }
+  .ummah-banner-section .banner-marquee .marquee-box .time {
+        margin: 0;
+        margin-left: 0px;
+        margin-left: -6px;
+    }
+}
+@media (max-width: 1332px) {
+    .ummah-featured-section .featured-container {
+      width: 1100px !important;
+      margin: 0px auto;
+    }
+}
+
+@media (max-width: 1130px) {
+    .ummah-featured-section .featured-container {
+      width: 950px !important;
+      margin: 0px auto;
+    }
+    .ummah-featured-section .featured-container .right-featured-home {
+      text-align: right;
+      margin-right: 0px;
+      margin-top: 84px;
+    }
+    .ummah-featured-section .featured-container .left-featured {
+      margin-top: 23px;
+      margin-left: 0px;
+    }
+}
+.ummah-featured-section .featured-container .left-featured .image {
+    display:none;
+}
+.right-featured-home {
+    display:block;
+}
+@media (max-width: 991px) {
+    .ummah-featured-section .featured-container .left-featured {
+        text-align:center;
+    }
+    .ummah-featured-section .featured-container .left-featured .featured-punch-line {
+        margin-top:6px !important;
+    }
+    .ummah-featured-section .featured-container .left-featured .image {
+        position: relative;
+        display:block;
+        margin-top: 29px;
+        margin-bottom: 36px;
+    }
+    .ummah-featured-section .featured-container .left-featured .image img {
+        border-radius: 8px;
+        position: relative;
+        z-index: 1000;
+    }
+    .right-featured-home {
+        display:none;
+    }
+    .ummah-featured-section .featured-container .left-featured .image .background-image {
+        width: 347px;
+        height: 422px;
+        border-radius: 8px;
+        background: #D1BA8E;
+        transform-origin: center;
+        margin-left: 45px;
+        box-shadow: -12px 16px 8.9px 0px #0000000D;
+        transform: rotate(-14deg);
+        top: 0px;
+        position: absolute;
+        top: 16px;
+        left: 223px;
+        z-index: 0;
+        display:none;
+    }
+    .ummah-featured-section .featured-container .left-featured .freatued-time {
+      border-radius: 29px;
+      padding: 3px 40px 3px 35px;
+    }
+    .ummah-featured-section .featured-container {
+        width: 100% !important;
+        margin: 0px auto;
+      }
+      .ummah-featured-section .featured-container .left-featured .featured-heading {
+      margin-top: 33px;
+    }
+    .ummah-featured-section .featured-container .left-featured .featured-sub-heading {
+      margin-top: 0px;
+    }
+}
+@media (max-width: 500px) {
+    
+    .ummah-featured-section .featured-container .left-featured .featured-heading {
+        font-size:36px;
+    }
+}
+@media (max-width: 1200px) {
+    
+    .featured-up-programs .program-container{
+        max-width: 940px;
+    }
+}
+.slick-arrow {
+    display:none !important;
+}
+
+@media (max-width: 985px) {
+    .featured-up-programs .program-container {
+        max-width: 650px;
+        width: 100%;
+    }
+    .featured-up-programs::before {
+        content: "";
+        position: absolute;
+        top: 241px;
+        left: 0;
+        right: 0;
+        height: 338px;
+        background: url(../images/program-layers.png) no-repeat center center / cover;
+        z-index: -1;
+    }
+}
+@media (max-width: 700px) {
+    .featured-up-programs .program-container {
+        max-width: 300px;
+        width: 100%;
+    }
+    .featured-up-programs::before {
+        content: "";
+        position: absolute;
+        top: 308px;
+        left: 0;
+        right: 0;
+        height: 338px;
+        background: url(../images/program-layers.png) no-repeat center center / cover;
+        z-index: -1;
+    }
+}
+@media (max-width: 500px) {
+    .featured-up-programs .program-container .featured-programs {
+        font-size: 28px;
+        margin-top: 13px;
+    }
+    .featured-up-programs .program-container {
+        max-width: 300px;
+    }
+    .featured-up-programs .program-container .featured-blocks .blocks {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-page .page-content .paragraph {
+        margin-top: 18px;
+    }
+}
+

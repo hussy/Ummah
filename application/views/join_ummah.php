@@ -94,7 +94,9 @@
                                     With your support, we can extend our resources to those in need within and beyond our community, following our faith’s teachings of compassion and generosity.
                                 </p>
                                 <div class="donate-button">
-                                    <button class="btn btn-donate btn-primary">Donate</button>
+                                    <a href="https://www.zeffy.com/en-US/donation-form/e6c041d0-59e3-44c1-9abb-3867bda70600">
+                                        <button class="btn btn-donate btn-primary">Donate</button>
+                                    </a>
                                 </div>
                             </div>    
                         </div>

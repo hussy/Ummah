@@ -3,7 +3,7 @@
         <div class="sub-section">
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
-                    <div class="subs-title">Join the Umma's newsletter:</div>
+                    <div class="subs-title">Join UMMA's Newsletter</div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
                     <div class="subscription-field">
@@ -25,14 +25,16 @@
             </div>
             <div class="footer-social-links">
                 <ul>
-                    <li><a href="https://www.facebook.com" target="_blank"><img src="<?php echo ASSETS_URL;?>images/facebook.png"></a></li>
-                    <li><a href="https://www.youtube.com" target="_blank"><img src="<?php echo ASSETS_URL;?>images/youtube.png"></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><img src="<?php echo ASSETS_URL;?>images/instagram.png"></a></li>
+                    <li><a href="https://www.facebook.com/michiganumma" target="_blank"><img src="<?php echo ASSETS_URL;?>images/facebook.png"></a></li>
+                    <li><a href="https://www.youtube.com/@michiganumma" target="_blank"><img src="<?php echo ASSETS_URL;?>images/youtube.png"></a></li>
+                    <li><a href="https://www.instagram.com/michiganumma/" target="_blank"><img src="<?php echo ASSETS_URL;?>images/instagram.png"></a></li>
                 </ul>
             </div>
-            <p class="footer-address">9565 S. Railroad Dr.<br> Spring Valley, NY 10977<br> United States</p>
+            <p class="footer-address">31333 Southfield Rd,<br> Beverly Hills, MI 48025<br> United States</p>
             <div class="footer-donate">
-                <button class="btn btn-donate btn-primary">DONATE</button>
+                <a target="_blank" href="https://www.zeffy.com/en-US/donation-form/e6c041d0-59e3-44c1-9abb-3867bda70600">
+                    <button class="btn btn-donate btn-primary">DONATE</button>
+                </a>
             </div>
         </div>
     </div>  
