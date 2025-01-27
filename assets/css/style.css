@@ -2986,8 +2986,6 @@ p {
     margin-top: 48px;
 }
 
-.up-programs .box-left .calendar-date ul {}
-
 .up-programs .box-left .calendar-date ul li {
     display: inline-block;
     width: 124px;
@@ -4081,10 +4079,6 @@ p {
     margin-bottom: 80px;
 }
 
-.resources-page .resource-content .video-section {}
-
-.resources-page .resource-content .video-section .top-tags {}
-
 .resources-page .resource-content .video-section .top-tags ul {
     padding: 0;
     margin: 0;
@@ -4600,4 +4594,12 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.hide-button {
+    visibility: hidden;
+}
+
+.image-fit {
+    object-fit: contain;
 }

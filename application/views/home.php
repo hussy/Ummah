@@ -201,7 +201,7 @@
                 <div class="event-time">Fri  |  Feb 14  |  06:30 PM</div>
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="<?php echo ASSETS_URL;?>images/up-event5.png" class="img">
+                        <img src="<?php echo ASSETS_URL;?>images/fundraising-dinner.jpeg" class="img image-fit">
                     </div>
                     <div class="event-title">
                         UMMA Community <br>Fundraising Dinner
@@ -217,10 +217,10 @@
                 </div>
             </div>
             <div class="blocks">
-                <div class="event-time">Sat  |  Feb 15  |  11:00 AM</div>
+                <div class="event-time">Sat  |  Feb 1  |  11:00 AM</div>
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="<?php echo ASSETS_URL;?>images/up-event3.png" class="img">
+                        <img src="<?php echo ASSETS_URL;?>images/souk-al-umma-event-flyer.jpeg" class="img image-fit">
                     </div>
                     <div class="event-title">
                         Souq Al-UMMA <br>Ramadan Bazaar
@@ -228,7 +228,7 @@
                     <div class="event-sheikh">
                         &nbsp;
                     </div>
-                    <div class="event-button">
+                    <div class="event-button hide-button">
                         <a href="https://linktr.ee/michiganumma" target="_blank">
                             <button class="btn btn-program-featured btn-primary">Register</button>
                         </a>
