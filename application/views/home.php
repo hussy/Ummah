@@ -1,6 +1,6 @@
 <div class="ummah-banner-section">
     <div class="video-overlay"></div>
-    <video autoplay muted loop id="ummah-video">
+    <video autoplay muted loop playsinline id="ummah-video">
         <source src="<?php echo ASSETS_URL;?>video/videoplayback.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -179,25 +179,6 @@
                 </div>
             </div>
             <div class="blocks">
-                <div class="event-time">Sat  |  Feb 15  |  11:00 AM</div>
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="<?php echo ASSETS_URL;?>images/up-event3.png" class="img">
-                    </div>
-                    <div class="event-title">
-                        Souq Al-UMMA <br>Ramadan Bazaar
-                    </div>
-                    <div class="event-sheikh">
-                        &nbsp;
-                    </div>
-                    <div class="event-button">
-                        <a href="https://linktr.ee/michiganumma" target="_blank">
-                            <button class="btn btn-program-featured btn-primary">Register</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="blocks">
                 <div class="event-time">Sat  |  Feb 07  |  05:00 AM</div>
                 <div class="event-card">
                     <div class="event-image">
@@ -224,6 +205,25 @@
                     </div>
                     <div class="event-title">
                         UMMA Community <br>Fundraising Dinner
+                    </div>
+                    <div class="event-sheikh">
+                        &nbsp;
+                    </div>
+                    <div class="event-button">
+                        <a href="https://linktr.ee/michiganumma" target="_blank">
+                            <button class="btn btn-program-featured btn-primary">Register</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="event-time">Sat  |  Feb 15  |  11:00 AM</div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="<?php echo ASSETS_URL;?>images/up-event3.png" class="img">
+                    </div>
+                    <div class="event-title">
+                        Souq Al-UMMA <br>Ramadan Bazaar
                     </div>
                     <div class="event-sheikh">
                         &nbsp;
