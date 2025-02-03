@@ -58,3 +58,4 @@ $route['about'] = 'Home/about';
 $route['programs'] = 'Home/programs';
 $route['join-umma'] = 'Home/joinUmma';
 $route['resources'] = 'Home/resources';
+$route['support'] = 'Home/support';
